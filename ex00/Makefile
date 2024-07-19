@@ -6,7 +6,7 @@
 #    By: ibertran <ibertran@student.42lyon.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/13 00:18:40 by ibertran          #+#    #+#              #
-#    Updated: 2024/07/20 01:12:58 by ibertran         ###   ########lyon.fr    #
+#    Updated: 2024/07/20 01:23:15 by ibertran         ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,6 +46,8 @@ CPPFLAGS 	=	$(addprefix -I, $(INCS)) \
 				-MMD -MP \
 
 MAKEFLAGS	=	--no-print-directory
+
+-include $(DEPS)
 
 # *** TARGETS **************************************************************** #
 
